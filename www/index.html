@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi nhiệt độ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Chuyển đổi nhiệt độ</h1>
+    <input type="number" id="celsiusInput" placeholder="Nhập nhiệt độ °C">
+    <button onclick="convertTemperature()">Chuyển đổi</button>
+    <p id="result">Nhiệt độ (°F): --</p>
+
+    <button onclick="shareResult()">📤 Chia sẻ</button>
+    <button onclick="getLocation()">📍 Lấy vị trí</button>
+</div>
+
+<script src="https://unpkg.com/@capacitor/core/dist/capacitor.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
